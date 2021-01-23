@@ -20,6 +20,7 @@
         <activity android:name=".Volunteers" />
         <activity android:name=".Underpriveleged" />
         <activity android:name=".VolOps" />
+        <activity android:name=".SheltersPage" />
     </application>
 
 </manifest>

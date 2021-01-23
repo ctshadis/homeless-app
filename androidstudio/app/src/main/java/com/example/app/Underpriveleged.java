@@ -1,11 +1,16 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,55 +26,32 @@ public class Underpriveleged extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.underpriveleged);
-        addShelters();
+        //TODO Change this title
+        getSupportActionBar().setTitle("Helping Hand: Resources (Change Me)");
+        //addShelters();
+
+        Button button=(Button)findViewById(R.id.shelterButton);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(Underpriveleged.this,SheltersPage.class);
+                startActivity(i);
+            }
+        });
 
 
 
     }
-
+/*
     protected void addShelters(){
         TextView t = new TextView(this);
 
-        LinearLayout ll = (LinearLayout) findViewById(R.id.shelterslinear);
+        ConstraintLayout cl = (ConstraintLayout) findViewById(R.id.underpriveleged_constraint);
 
 
-        ArrayList<String> testList = new ArrayList<String>();
-        testList.add("A");
-        testList.add("B");
-        testList.add("C");
-        testList.add("D");
-        testList.add("E");
-        testList.add("F");
-        testList.add("G");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("B");
-        testList.add("C");
-        testList.add("D");
-        testList.add("E");
-        testList.add("F");
-        testList.add("G");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
-        testList.add("A");
+
 
 
 
@@ -89,23 +71,24 @@ public class Underpriveleged extends AppCompatActivity {
         arrList.add(ywca);
         arrList.add(veterans);
 
-        for (int i = 0; i < testList.size(); i++){
+        for (int i = 0; i < arrList.size(); i++){
             TextView shelterName = new TextView(this);
-            String name = testList.get(i);
-            //String name = arrList.get(i).getName();
+            String name = arrList.get(i).getName();
             shelterName.setText(name);
             shelterName.setPadding(0, 5, 0, 2);
-            ll.addView(shelterName);
+            cl.addView(shelterName);
 
         }
 
-
-    }
-
-
+ */
 
 
 }
+
+
+
+
+
 
 
 
