@@ -41,6 +41,28 @@ public class Underpriveleged extends AppCompatActivity {
             }
         });
 
+        Button button2=(Button)findViewById(R.id.foodButton);
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(Underpriveleged.this,FoodBanks.class);
+                startActivity(i);
+            }
+        });
+
+        Button button3=(Button)findViewById(R.id.hotlinesButton);
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(Underpriveleged.this, Hotlines.class);
+                startActivity(i);
+            }
+        });
+
 
 
     }
