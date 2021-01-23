@@ -19,6 +19,7 @@
 
         <activity android:name=".Volunteers" />
         <activity android:name=".Underpriveleged" />
+        <activity android:name=".VolOps" />
     </application>
 
 </manifest>
