@@ -1,6 +1,8 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import android.os.Bundle;
 import android.os.Handler;
@@ -30,6 +32,47 @@ public class Underpriveleged extends AppCompatActivity {
 
         LinearLayout ll = (LinearLayout) findViewById(R.id.shelterslinear);
 
+
+        ArrayList<String> testList = new ArrayList<String>();
+        testList.add("A");
+        testList.add("B");
+        testList.add("C");
+        testList.add("D");
+        testList.add("E");
+        testList.add("F");
+        testList.add("G");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("B");
+        testList.add("C");
+        testList.add("D");
+        testList.add("E");
+        testList.add("F");
+        testList.add("G");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+        testList.add("A");
+
+
+
         ArrayList<Shelter> arrList = new ArrayList<Shelter>();
         Shelter abbys = new Shelter("Abby's House", "5087565486", 52, "High St");
         Shelter jeremiahs = new Shelter("Jeremiah's Inn",  "5087556403", 1059, "Main St");
@@ -46,9 +89,10 @@ public class Underpriveleged extends AppCompatActivity {
         arrList.add(ywca);
         arrList.add(veterans);
 
-        for (int i = 0; i < arrList.size(); i++){
+        for (int i = 0; i < testList.size(); i++){
             TextView shelterName = new TextView(this);
-            String name = arrList.get(i).getName();
+            String name = testList.get(i);
+            //String name = arrList.get(i).getName();
             shelterName.setText(name);
             shelterName.setPadding(0, 5, 0, 2);
             ll.addView(shelterName);
