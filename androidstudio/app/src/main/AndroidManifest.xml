@@ -20,6 +20,8 @@
         <activity android:name=".Volunteers" />
         <activity android:name=".Underpriveleged" />
         <activity android:name=".VolOps" />
+        <activity android:name=".ComOut" />
+        <activity android:name=".Donate" />
     </application>
 
 </manifest>

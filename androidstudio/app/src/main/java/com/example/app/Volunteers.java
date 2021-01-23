@@ -24,7 +24,32 @@ public class Volunteers extends AppCompatActivity {
                 Intent i = new Intent(Volunteers.this,VolOps.class);
                 startActivity(i);
             }
+
         });
+
+        Button button2 =(Button)findViewById(R.id.comOut);
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(Volunteers.this,ComOut.class);
+                startActivity(i);
+            }
+        });
+
+        Button button3 =(Button)findViewById(R.id.donate);
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(Volunteers.this,Donate.class);
+                startActivity(i);
+            }
+        });
+
+
 
     }
 
