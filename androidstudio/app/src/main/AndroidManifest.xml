@@ -22,6 +22,8 @@
         <activity android:name=".VolOps" />
         <activity android:name=".ComOut" />
         <activity android:name=".Donate" />
+        <activity android:name=".SheltersPage" />
+
     </application>
 
 </manifest>
