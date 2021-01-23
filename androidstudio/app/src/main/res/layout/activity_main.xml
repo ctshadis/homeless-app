@@ -8,11 +8,13 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="359dp"
         android:layout_height="106dp"
         android:text="I Need Help"
         android:textColor="#000000"
+        android:onClick="sendMessage"
+        android:theme="@style/Button.Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,8 @@
         android:layout_height="106dp"
         android:text="I Want To Help"
         android:textColor="#000000"
+        android:onClick="sendMessage"
+        android:theme="@style/Button.Black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
