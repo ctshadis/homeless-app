@@ -61,12 +61,13 @@ public class Register extends AppCompatActivity {
                 }
 
                 User newUser = new User(name, phone, email, password, choice);
+                String message = newUser.storeToFile();
 
                 Context context = getApplicationContext();
                 String text = "Welcome " + newUser.getName() + "! You are now a " + choice + "!";
                 int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context, text, duration);
+                Toast toast = Toast.makeText(context, message, duration);
                 toast.show();
 
             }
