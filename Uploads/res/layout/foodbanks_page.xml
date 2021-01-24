@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shelters_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="396dp"
+        android:layout_height="75dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/food_banks_in_worcester"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#050505"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/shelterCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:text="Food Banks in Worcester" />
+
+    <ScrollView
+        android:id="@+id/shelterCardView"
+        android:layout_width="413dp"
+        android:layout_height="568dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/stoscarcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_cyan_border"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/stoscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/st_oscar_romero_food_pantry"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stoscar"
+                    app:srcCompat="@drawable/phone_icon"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/stoscarphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 799-5009"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/stoscar"
+                    tools:text="(508) 799-5009" />
+
+                <ImageView
+                    android:id="@+id/homeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/stoscaraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="19 Chatham St."
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/stoscarphone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sacitadelcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_cyan_border"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/stoscarcard"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/sacitadel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Salvation Army Food Pantry"
+                    android:textColor="#000000"
+                    android:textColorLink="#323232"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon_2"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadel"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/sacitadelphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 756-7191"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon_2"
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadel"
+                    tools:text="(508) 756-7191" />
+
+                <ImageView
+                    android:id="@+id/homeIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon_2"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/sacitadeladdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="640 Main St."
+                    android:textColor="#000000"
+                    android:textColorLink="#323232"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon2"
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadelphone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cartycard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_cyan_border"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/sacitadelcard"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/carty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Carty Cupboard Food Pantry"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon_3"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carty"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/cartyphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 799-4191"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon_3"
+                    app:layout_constraintTop_toBottomOf="@+id/carty"
+                    tools:text="(508) 799-4191" />
+
+                <ImageView
+                    android:id="@+id/homeIcon3"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon_3"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/cartyaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="114 Main St."
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon3"
+                    app:layout_constraintTop_toBottomOf="@+id/cartyphone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/centrocard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_cyan_border"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/cartycard"
+                tools:layout_editor_absoluteX="10dp">
+
+                <TextView
+                    android:id="@+id/centro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="CENTRO Food Pantry"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon_4"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/centro"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/centrophone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 798-1900 #246"
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon_4"
+                    app:layout_constraintTop_toBottomOf="@+id/centro"
+                    tools:text="(508) 798-1900 #246" />
+
+                <ImageView
+                    android:id="@+id/homeIcon4"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon_4"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/centroaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="11 Sycamore St."
+                    android:textColor="#000000"
+                    android:textColorLink="#424242"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon4"
+                    app:layout_constraintTop_toBottomOf="@+id/centrophone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

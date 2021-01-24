@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/underpriveleged_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="304dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/we_know_times_are_tough_but_things_will_get_better_let_your_community_help_you_back_on_your_feet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="238dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="We're here to help"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#000000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/volOps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="367dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_cyan_border"
+        android:onClick="sendMessage"
+        android:text="@string/food_banks"
+        android:textColor="#000000"
+        android:theme="@style/Button.Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shelterButton" />
+
+    <Button
+        android:id="@+id/shelterButton"
+        android:layout_width="367dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/gradient_accent"
+        android:onClick="sendMessage"
+        android:text="@string/shelters"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message2" />
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="367dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/rounded_cyan_border"
+        android:text="Requests"
+        android:textColor="#000000"
+        android:theme="@style/Button.Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodButton"
+        app:layout_constraintVertical_bias="0.042" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
