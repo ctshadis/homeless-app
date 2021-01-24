@@ -54,5 +54,10 @@
     <string name="i_need_help">I Need Help</string>
     <string name="food_banks_in_worcester">Food Banks in Worcester</string>
     <string name="st_oscar_romero_food_pantry">St. Oscar Romero Food Pantry</string>
+    <string name="previous_requests">Previous Requests</string>
+    <string name="make_a_request">Make a Request</string>
+    <string name="if_you_are_in_need_of_something_make_a_request_we_will_match_you_with_someone_who_can_help_meet_your_needs">If you are in need of something make a request, we will match you with someone who can help meet your needs</string>
+    <string name="submit">Submit</string>
+    <string name="write_request">Write Request</string>
 
 </resources>
