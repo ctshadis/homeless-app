@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient_animation"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
 
     <!--        //app:layout_constraintVertical_bias="0.363" />-->
 
@@ -80,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
-        app:layout_constraintVertical_bias="0.276" />
+    app:layout_constraintVertical_bias="0.276" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
