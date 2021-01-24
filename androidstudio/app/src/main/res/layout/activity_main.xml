@@ -72,7 +72,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/rounded_cyan_border"
-        android:text="@string/log_in"
+        android:text="@string/register"
         android:textColor="#000000"
         android:theme="@style/Button.Black"
         app:layout_constraintBottom_toBottomOf="parent"

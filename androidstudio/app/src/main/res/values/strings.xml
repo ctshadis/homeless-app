@@ -59,5 +59,6 @@
     <string name="if_you_are_in_need_of_something_make_a_request_we_will_match_you_with_someone_who_can_help_meet_your_needs">If you are in need of something make a request, we will match you with someone who can help meet your needs</string>
     <string name="submit">Submit</string>
     <string name="write_request">Write Request</string>
+    <string name="register">Register</string>
 
 </resources>
