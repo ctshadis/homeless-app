@@ -9,12 +9,12 @@
     android:background="#FFCC70">
 
     <TextView
-        android:id="@+id/sheltersTitle"
+        android:id="@+id/foodTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:includeFontPadding="false"
-        android:text="Shelters in Worcester, MA"
+        android:text="Food Banks in Worcester, MA"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/shelterCardView"
@@ -44,21 +44,21 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/abbyscard"
+                android:id="@+id/stoscarcard"
                 android:layout_width="match_parent"
-                android:layout_height="117dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/abbys"
+                    android:id="@+id/stoscar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="Abby's House"
-                    android:textSize="30sp"
+                    android:text="St. Oscar Romero Food Pantry"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -70,22 +70,22 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/abbys"
+                    app:layout_constraintTop_toBottomOf="@+id/stoscar"
                     app:srcCompat="@drawable/phone_icon" />
 
                 <TextView
-                    android:id="@+id/abbysPhone"
+                    android:id="@+id/stoscarphone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:clickable="true"
                     android:autoLink="phone"
-                    android:text="(508) 756-5486"
+                    android:clickable="true"
+                    android:text="(508) 799-5009"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon"
-                    app:layout_constraintTop_toBottomOf="@+id/abbys"
-                    tools:text="(508) 756-5486" />
+                    app:layout_constraintTop_toBottomOf="@+id/stoscar"
+                    tools:text="(508) 799-5009" />
 
                 <ImageView
                     android:id="@+id/homeIcon"
@@ -98,34 +98,34 @@
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/abbysaddress"
+                    android:id="@+id/stoscaraddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
-                    android:text="52 High St."
+                    android:text="19 Chatham St."
                     app:layout_constraintStart_toEndOf="@+id/homeIcon"
-                    app:layout_constraintTop_toBottomOf="@+id/abbysPhone" />
+                    app:layout_constraintTop_toBottomOf="@+id/stoscarphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/jeremiahscard"
+                android:id="@+id/sacitadelcard"
                 android:layout_width="match_parent"
-                android:layout_height="117dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/abbyscard">
+                app:layout_constraintTop_toBottomOf="@id/stoscarcard">
 
                 <TextView
-                    android:id="@+id/jeremiahs"
+                    android:id="@+id/sacitadel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="Jeremiah's Inn"
-                    android:textSize="30sp"
+                    android:text="Salvation Army Food Pantry"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -137,22 +137,22 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/jeremiahs"
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadel"
                     app:srcCompat="@drawable/phone_icon" />
 
                 <TextView
-                    android:id="@+id/jeremiahsPhone"
+                    android:id="@+id/sacitadelphone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 756-6403"
-                    android:clickable="true"
                     android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 756-7191"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_2"
-                    app:layout_constraintTop_toBottomOf="@+id/jeremiahs"
-                    tools:text="(508) 756-6403" />
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadel"
+                    tools:text="(508) 756-7191" />
 
                 <ImageView
                     android:id="@+id/homeIcon2"
@@ -165,35 +165,34 @@
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/jeremiahsaddress"
+                    android:id="@+id/sacitadeladdress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
-                    android:text="1059 Main St."
+                    android:text="640 Main St."
                     app:layout_constraintStart_toEndOf="@+id/homeIcon2"
-                    app:layout_constraintTop_toBottomOf="@+id/jeremiahsPhone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/sacitadelphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/francescard"
+                android:id="@+id/cartycard"
                 android:layout_width="match_parent"
-                android:layout_height="117dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/jeremiahscard">
+                app:layout_constraintTop_toBottomOf="@id/sacitadelcard">
 
                 <TextView
-                    android:id="@+id/frances"
+                    android:id="@+id/carty"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="Frances Perkins Home"
-                    android:textSize="30sp"
+                    android:text="Carty Cupboard Food Pantry"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -205,22 +204,22 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/frances"
+                    app:layout_constraintTop_toBottomOf="@+id/carty"
                     app:srcCompat="@drawable/phone_icon" />
 
                 <TextView
-                    android:id="@+id/francesPhone"
+                    android:id="@+id/cartyphone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 757-7506"
-                    android:clickable="true"
                     android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 799-4191"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_3"
-                    app:layout_constraintTop_toBottomOf="@+id/frances"
-                    tools:text="(508) 757-7506" />
+                    app:layout_constraintTop_toBottomOf="@+id/carty"
+                    tools:text="(508) 799-4191" />
 
                 <ImageView
                     android:id="@+id/homeIcon3"
@@ -233,35 +232,34 @@
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/francesaddress"
+                    android:id="@+id/cartyaddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
-                    android:text="70 James St., Suite 139B"
+                    android:text="114 Main St."
                     app:layout_constraintStart_toEndOf="@+id/homeIcon3"
-                    app:layout_constraintTop_toBottomOf="@+id/francesPhone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/cartyphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/interfaithcard"
+                android:id="@+id/centro"
                 android:layout_width="match_parent"
-                android:layout_height="117dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/francescard">
+                app:layout_constraintTop_toBottomOf="@id/cartycard">
 
                 <TextView
-                    android:id="@+id/interfaith"
+                    android:id="@+id/centro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="Interfaith Hospitality"
-                    android:textSize="30sp"
+                    android:text="CENTRO Food Pantry"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -273,21 +271,22 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/interfaith"
+                    app:layout_constraintTop_toBottomOf="@+id/centro"
                     app:srcCompat="@drawable/phone_icon" />
 
                 <TextView
-                    android:id="@+id/interfaithphone"
+                    android:id="@+id/centrophone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 755-2212"
                     android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 798-1900 #246"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_4"
-                    app:layout_constraintTop_toBottomOf="@+id/interfaith"
-                    tools:text="(508) 755-2212" />
+                    app:layout_constraintTop_toBottomOf="@+id/centro"
+                    tools:text="(508) 798-1900 #246" />
 
                 <ImageView
                     android:id="@+id/homeIcon4"
@@ -300,157 +299,26 @@
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/interfaithaddress"
+                    android:id="@+id/centroaddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
-                    android:text="91 June St."
+                    android:text="11 Sycamore St."
                     app:layout_constraintStart_toEndOf="@+id/homeIcon4"
-                    app:layout_constraintTop_toBottomOf="@+id/interfaithphone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/centrophone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/ywcacard"
-                android:layout_width="match_parent"
-                android:layout_height="117dp"
-                android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/interfaithcard">
 
-                <TextView
-                    android:id="@+id/ywca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="4dp"
-                    android:text="Y.W.C.A Of Central MA"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/phone_icon_5"
-                    android:layout_width="24dp"
-                    android:layout_height="28dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginLeft="50dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ywca"
-                    app:srcCompat="@drawable/phone_icon" />
 
-                <TextView
-                    android:id="@+id/ywcaphone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="4dp"
-                    android:text="(508) 791-3181"
-                    android:autoLink="phone"
-                    app:layout_constraintStart_toEndOf="@+id/phone_icon_5"
-                    app:layout_constraintTop_toBottomOf="@+id/ywca"
-                    tools:text="(508) 791-3181" />
 
-                <ImageView
-                    android:id="@+id/homeIcon5"
-                    android:layout_width="24dp"
-                    android:layout_height="28dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginLeft="50dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/phone_icon_5"
-                    app:srcCompat="@drawable/home_icon" />
-
-                <TextView
-                    android:id="@+id/ywcaaddress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="8dp"
-                    android:text="91 June St."
-                    app:layout_constraintStart_toEndOf="@+id/homeIcon5"
-                    app:layout_constraintTop_toBottomOf="@+id/ywcaphone"
-                    tools:layout_editor_absoluteX="16dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/veteranscard"
-                android:layout_width="match_parent"
-                android:layout_height="117dp"
-                android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/ywcacard">
-
-                <TextView
-                    android:id="@+id/veterans"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="4dp"
-                    android:text="Veterans, Inc."
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/phone_icon_6"
-                    android:layout_width="24dp"
-                    android:layout_height="28dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginLeft="50dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/veterans"
-                    app:srcCompat="@drawable/phone_icon" />
-
-                <TextView
-                    android:id="@+id/veteransphone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="4dp"
-                    android:text="(800) 482-2565"
-                    android:autoLink="phone"
-                    app:layout_constraintStart_toEndOf="@+id/phone_icon_6"
-                    app:layout_constraintTop_toBottomOf="@+id/veterans"
-                    tools:text="(800) 482-2565" />
-
-                <ImageView
-                    android:id="@+id/homeIcon6"
-                    android:layout_width="24dp"
-                    android:layout_height="28dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginLeft="50dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/phone_icon_6"
-                    app:srcCompat="@drawable/home_icon" />
-
-                <TextView
-                    android:id="@+id/veteransaddress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="8dp"
-                    android:text="69 Grove St."
-                    app:layout_constraintStart_toEndOf="@+id/homeIcon6"
-                    app:layout_constraintTop_toBottomOf="@+id/veteransphone"
-                    tools:layout_editor_absoluteX="16dp" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
