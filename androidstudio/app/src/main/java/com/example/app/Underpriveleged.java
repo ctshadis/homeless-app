@@ -1,26 +1,20 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 public class Underpriveleged extends AppCompatActivity {
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.underpriveleged);
-        //TODO Change this title
+
         getSupportActionBar().hide();
-        //addShelters();
+
 
         Button button=(Button)findViewById(R.id.shelterButton);
         button.setOnClickListener(new View.OnClickListener() {
@@ -54,49 +48,7 @@ public class Underpriveleged extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
     }
-/*
-    protected void addShelters(){
-        TextView t = new TextView(this);
-
-        ConstraintLayout cl = (ConstraintLayout) findViewById(R.id.underpriveleged_constraint);
-
-
-
-
-
-
-        ArrayList<Shelter> arrList = new ArrayList<Shelter>();
-        Shelter abbys = new Shelter("Abby's House", "5087565486", 52, "High St");
-        Shelter jeremiahs = new Shelter("Jeremiah's Inn",  "5087556403", 1059, "Main St");
-        Shelter francesperkins = new Shelter("Frances Perkins Home",  "5087577506", 70, "James St., Suite 139B");
-        Shelter interfaith = new Shelter("Interfaith Hospitality Network", "5087552212", 91, "June St");
-        Shelter ywca = new Shelter("Y.W.C.A. of Central MA", "5087913181", 1, "Salem Square");
-        Shelter veterans = new Shelter("Veterans, Inc.", "8004822565", 69, "Grove St");
-
-
-        arrList.add(abbys);
-        arrList.add(jeremiahs);
-        arrList.add(francesperkins);
-        arrList.add(interfaith);
-        arrList.add(ywca);
-        arrList.add(veterans);
-
-        for (int i = 0; i < arrList.size(); i++){
-            TextView shelterName = new TextView(this);
-            String name = arrList.get(i).getName();
-            shelterName.setText(name);
-            shelterName.setPadding(0, 5, 0, 2);
-            cl.addView(shelterName);
-
-        }
-
- */
-
-
 }
 
 

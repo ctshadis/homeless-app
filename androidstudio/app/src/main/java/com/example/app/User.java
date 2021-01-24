@@ -1,24 +1,5 @@
 package com.example.app;
 
-import android.content.Context;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.FileWriter;
-
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class User {
 
@@ -56,26 +37,4 @@ public class User {
         this.phone = phone;
     }
 
-    /*public String storeToFile(Context ctx){
-        File file = getFileStreamPath("test.txt");
-
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-
-        FileOutputStream writer = openFileOutput(file.getName(), Context.MODE_PRIVATE);
-
-        for (String string: data){
-            writer.write(string.getBytes());
-            writer.flush();
-        }
-
-        writer.close();
-
-    }
-
-
-
-
-*/
 }

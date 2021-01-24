@@ -1,9 +1,7 @@
 package com.example.app;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 
 public class Donate extends AppCompatActivity {

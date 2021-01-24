@@ -1,6 +1,7 @@
 package com.example.app;
 
 public class Shelter {
+
     private String id;
     private String name;
     private String tel;
