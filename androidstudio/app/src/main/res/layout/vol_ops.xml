@@ -20,4 +20,170 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="413dp"
+        android:layout_height="557dp"
+        android:layout_marginTop="67dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volunteeringText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_margin="10dp"
+                android:background="#A8FFC107"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/homeIcon7"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="11dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/description"
+                    app:layout_constraintEnd_toStartOf="@+id/catholicAddress2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon4"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/catholicPhone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="236dp"
+                    android:layout_marginRight="236dp"
+                    android:layout_marginBottom="18dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/_508_756_5486"
+                    android:textColor="#000000"
+                    android:textColorLink="#353735"
+                    app:layout_constraintBottom_toTopOf="@+id/catholicAddress2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon4"
+                    app:layout_constraintTop_toBottomOf="@+id/volName"
+                    tools:text="(508) 798-0191" />
+
+                <ImageView
+                    android:id="@+id/phone_icon4"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/homeIcon7"
+                    app:layout_constraintEnd_toStartOf="@+id/catholicPhone2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/volName"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/catholicAddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="199dp"
+                    android:layout_marginRight="199dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="@string/worcester_ma_01610"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toTopOf="@+id/description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon7" />
+
+                <TextView
+                    android:id="@+id/volName"
+                    android:layout_width="219dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/worcester_soup_kitchen"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#040404"
+                    android:textColorLink="#353434"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.068" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="289dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="78dp"
+                    android:layout_marginRight="78dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/looking_for_people_to_come_help_us_make_and_distribute_food"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#040404"
+                    android:textColorLink="#353434"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/homeIcon7" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/noMore"
+                    android:layout_width="275dp"
+                    android:layout_height="63dp"
+                    android:gravity="center"
+                    android:text="@string/sorry_there_are_no_more_volunteering_opportunities_currently_available_try_again_later"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/volExplanation"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="@string/search_for_nearby_volunteering_opportunities"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volunteeringText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

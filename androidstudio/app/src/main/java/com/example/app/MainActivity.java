@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Helping Hand");
 
         User user1 = new User("chris shadis", "7742001286", "volunteer", "ctshadis@gmail.com", "passw0rd");
-        String result = user1.storeToFile(this);
-        getSupportActionBar().setTitle(result);
+      //  String result = user1.storeToFile(this);
+      //  getSupportActionBar().setTitle(result);
         Button button=(Button)findViewById(R.id.button1);
         button.setOnClickListener(new View.OnClickListener() {
 

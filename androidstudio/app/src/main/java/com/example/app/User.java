@@ -56,7 +56,7 @@ public class User {
         this.phone = phone;
     }
 
-    public String storeToFile(Context ctx){
+    /*public String storeToFile(Context ctx){
         File file = getFileStreamPath("test.txt");
 
         if (!file.exists()) {
@@ -77,5 +77,5 @@ public class User {
 
 
 
-
+*/
 }

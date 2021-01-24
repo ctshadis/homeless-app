@@ -40,4 +40,8 @@
     <string name="jacob_saulnier">Jacob Saulnier</string>
     <string name="requesting_i_have_experiance_fixing_cars_does_anyone_know_of_any_mechanic_job_openings">Requesting: I have experiance fixing cars, does anyone know of any mechanic job openings?</string>
     <string name="requesting_need_size_medium_shirts_for_my_son">Requesting: Need size medium shirts for my son</string>
+    <string name="worcester_soup_kitchen">Worcester Soup Kitchen</string>
+    <string name="looking_for_people_to_come_help_us_make_and_distribute_food">Looking for people to come help us make and distribute food</string>
+    <string name="search_for_nearby_volunteering_opportunities">Search for nearby volunteering opportunities</string>
+    <string name="sorry_there_are_no_more_volunteering_opportunities_currently_available_try_again_later">Sorry, there are no more volunteering opportunities currently available. Try again later.</string>
 </resources>
