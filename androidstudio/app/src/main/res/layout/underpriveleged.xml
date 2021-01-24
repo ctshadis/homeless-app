@@ -57,7 +57,7 @@
         android:layout_width="367dp"
         android:layout_height="67dp"
         android:layout_marginTop="92dp"
-        android:background="@drawable/rounded_cyan_border"
+        android:background="@drawable/gradient_accent"
         android:onClick="sendMessage"
         android:text="@string/shelters"
         android:textColor="#000000"

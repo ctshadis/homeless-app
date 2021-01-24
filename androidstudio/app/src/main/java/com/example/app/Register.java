@@ -68,8 +68,21 @@ public class Register extends AppCompatActivity {
                 String text = "Welcome " + newUser.getName() + "! You are now a " + choice + "!";
                 int duration = Toast.LENGTH_SHORT;
 
-                //Toast toast = Toast.makeText(context, message, duration);
-                //toast.show();
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+
+                nameField.setText("");
+                phoneField.setText("");
+                emailField.setText("");
+                passwordField.setText("");
+                Intent i;
+                if (choice.equals("benefactor")) {
+                    i = new Intent(Register.this, Underpriveleged.class);
+                }
+                else{
+                    i = new Intent(Register.this, Volunteers.class);
+                }
+                startActivity(i);
 
             }
         });
