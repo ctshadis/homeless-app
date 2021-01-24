@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +22,7 @@ public class Request extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        Button button=(Button)findViewById(R.id.submitRequest);
+        ImageView button=(ImageView) findViewById(R.id.submitRequest);
         editText = (EditText)findViewById(R.id.editText);
         button.setOnClickListener(new View.OnClickListener() {
 
