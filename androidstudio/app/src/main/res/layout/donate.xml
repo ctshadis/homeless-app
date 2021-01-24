@@ -58,113 +58,263 @@
                 android:textColor="#000000"
                 android:textSize="28sp" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Catholic"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_gravity="fill"
-                android:background="#A4FFC107"
-                app:cardBackgroundColor="#A4FFC107"
-                app:cardCornerRadius="35dp"
-                app:contentPaddingBottom="50dp">
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#A8FFC107"
+                app:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/catholicCard"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <TextView
+                    android:id="@+id/elBuen"
                     android:layout_width="match_parent"
-                    android:layout_height="158dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/el_buen_samaritano_food_program"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/desc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="19dp"
-                        android:layout_marginEnd="81dp"
-                        android:layout_marginRight="81dp"
-                        android:layout_marginBottom="3dp"
-                        android:text="Low income families and individuals"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/descLabel"
-                        app:layout_constraintTop_toBottomOf="@+id/addressName" />
+                <ImageView
+                    android:id="@+id/phone_icon3"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/elBuen"
+                    app:srcCompat="@drawable/phone_icon" />
 
-                    <TextView
-                        android:id="@+id/descLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="29dp"
-                        android:layout_marginLeft="29dp"
-                        android:layout_marginTop="19dp"
-                        android:layout_marginBottom="15dp"
-                        android:text="Description:"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/desc"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/addressName" />
+                <TextView
+                    android:id="@+id/elBuenPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/_508_756_5486"
+                    android:textColor="#000000"
+                    android:textColorLink="#353735"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon3"
+                    app:layout_constraintTop_toBottomOf="@+id/elBuen"
+                    tools:text="(508) 410-8902" />
 
-                    <TextView
-                        android:id="@+id/catholicName"
-                        android:layout_width="271dp"
-                        android:layout_height="28dp"
-                        android:layout_marginTop="16dp"
-                        android:gravity="center_horizontal"
-                        android:text="@string/catholic_charities"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/homeIcon3"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon3"
+                    app:srcCompat="@drawable/home_icon" />
 
-                    <TextView
-                        android:id="@+id/phoneLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="79dp"
-                        android:text="@string/phone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/phone"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/catholicName" />
+                <TextView
+                    android:id="@+id/elBuenAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="252dp"
+                    android:layout_marginRight="252dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="@string/_39_piedmont_st_worcester_ma_01610"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon3"
+                    app:layout_constraintTop_toBottomOf="@+id/elBuenPhone"
+                    app:layout_constraintVertical_bias="1.0" />
 
-                    <TextView
-                        android:id="@+id/phone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="242dp"
-                        android:layout_marginRight="242dp"
-                        android:layout_marginBottom="79dp"
-                        android:text="@string/_508_798_0191"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/phoneLabel"
-                        app:layout_constraintTop_toBottomOf="@+id/catholicName" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <TextView
-                        android:id="@+id/addressName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="192dp"
-                        android:layout_marginRight="192dp"
-                        android:text="@string/worcester_ma_01610"
-                        app:layout_constraintBottom_toTopOf="@+id/desc"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/addressLabel"
-                        app:layout_constraintTop_toBottomOf="@+id/phone" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#A8FFC107"
+                app:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/catholicCard"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/addressLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="29dp"
-                        android:layout_marginLeft="29dp"
-                        android:text="@string/address"
-                        app:layout_constraintBottom_toTopOf="@+id/descLabel"
-                        app:layout_constraintEnd_toStartOf="@+id/addressName"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/catholic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/catholic_charity"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/catholic"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/catholicPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/_508_756_5486"
+                    android:textColor="#000000"
+                    android:textColorLink="#353735"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon"
+                    app:layout_constraintTop_toBottomOf="@+id/catholic"
+                    tools:text="(508) 798-0191" />
+
+                <ImageView
+                    android:id="@+id/homeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/catholicAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="252dp"
+                    android:layout_marginRight="252dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="@string/worcester_ma_01610"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/catholicPhone"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#A8FFC107"
+                app:layout_constraintTop_toTopOf="parent">
+                android:id="@+id/catholicCard"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/abbyKelly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/abby_kelly_foster_house"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/phone_icon2"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/abbyKelly"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/abbyKellyPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/_508_756_5486"
+                    android:textColor="#000000"
+                    android:textColorLink="#353735"
+                    app:layout_constraintStart_toEndOf="@+id/phone_icon2"
+                    app:layout_constraintTop_toBottomOf="@+id/abbyKelly"
+                    tools:text="(508) 756-5486" />
+
+                <ImageView
+                    android:id="@+id/homeIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_icon2"
+                    app:srcCompat="@drawable/home_icon" />
+
+                <TextView
+                    android:id="@+id/abbyKellyAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="252dp"
+                    android:layout_marginRight="252dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="@string/_52_high_st_worcester_ma_01609"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/homeIcon2"
+                    app:layout_constraintTop_toBottomOf="@+id/abbyKellyPhone"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
