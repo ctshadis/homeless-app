@@ -26,7 +26,7 @@ public class SheltersPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shelters_page);
         //TODO Change this title
-        getSupportActionBar().setTitle("Helping Hand: Shelters (Change Me)");
+        getSupportActionBar().setTitle("");
         //addShelters();
 
 

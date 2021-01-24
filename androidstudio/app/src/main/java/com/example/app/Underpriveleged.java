@@ -1,19 +1,11 @@
 package com.example.app;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-
 
 
 public class Underpriveleged extends AppCompatActivity {
@@ -27,7 +19,7 @@ public class Underpriveleged extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.underpriveleged);
         //TODO Change this title
-        getSupportActionBar().setTitle("Helping Hand: Resources (Change Me)");
+        getSupportActionBar().setTitle("");
         //addShelters();
 
         Button button=(Button)findViewById(R.id.shelterButton);
@@ -52,13 +44,13 @@ public class Underpriveleged extends AppCompatActivity {
             }
         });
 
-        Button button3=(Button)findViewById(R.id.hotlinesButton);
+        Button button3=(Button)findViewById(R.id.requestButton);
         button3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(Underpriveleged.this, Hotlines.class);
+                Intent i = new Intent(Underpriveleged.this, Request.class);
                 startActivity(i);
             }
         });

@@ -33,7 +33,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_page);
         //TODO Change this title
-        getSupportActionBar().setTitle("Helping Hand: Regsiter (Change Me)");
+        getSupportActionBar().setTitle("");
 
         TextView registerText = (TextView)findViewById(R.id.register_text);
         ImageView button=(ImageView)findViewById(R.id.login_button);
@@ -42,6 +42,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
+
                 EditText nameField = (EditText)findViewById(R.id.editTextName);
                 String name = nameField.getText().toString();
                 EditText phoneField = (EditText)findViewById(R.id.editTextMobile);
@@ -61,14 +62,14 @@ public class Register extends AppCompatActivity {
                 }
 
                 User newUser = new User(name, phone, email, password, choice);
-                String message = newUser.storeToFile();
+                //String message = newUser.storeToFile();
 
                 Context context = getApplicationContext();
                 String text = "Welcome " + newUser.getName() + "! You are now a " + choice + "!";
                 int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context, message, duration);
-                toast.show();
+                //Toast toast = Toast.makeText(context, message, duration);
+                //toast.show();
 
             }
         });

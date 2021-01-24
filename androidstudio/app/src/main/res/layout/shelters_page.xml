@@ -6,34 +6,34 @@
     android:id="@+id/shelters_constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCC70">
+    android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/sheltersTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="369dp"
+        android:layout_height="72dp"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:includeFontPadding="false"
-        android:text="Shelters in Worcester, MA"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Shelters in Worcester"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/shelterCardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64"
-        tools:text="Shelters in Worcester, MA" />
+        app:layout_constraintVertical_bias="0.38"
+        tools:text="Shelters in Worcester" />
 
     <ScrollView
         android:id="@+id/shelterCardView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="424dp"
+        android:layout_height="593dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -47,8 +47,11 @@
                 android:id="@+id/abbyscard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp">
 
                 <TextView
                     android:id="@+id/abbys"
@@ -58,6 +61,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Abby's House"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -80,9 +84,11 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:clickable="true"
                     android:autoLink="phone"
+                    android:clickable="true"
                     android:text="(508) 756-5486"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon"
                     app:layout_constraintTop_toBottomOf="@+id/abbys"
                     tools:text="(508) 756-5486" />
@@ -105,6 +111,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="52 High St."
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon"
                     app:layout_constraintTop_toBottomOf="@+id/abbysPhone" />
 
@@ -114,8 +121,11 @@
                 android:id="@+id/jeremiahscard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/abbyscard">
+                app:layout_constraintTop_toBottomOf="@+id/abbyscard"
+                tools:layout_editor_absoluteX="10dp">
 
                 <TextView
                     android:id="@+id/jeremiahs"
@@ -125,6 +135,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Jeremiah's Inn"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -147,9 +158,11 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 756-6403"
-                    android:clickable="true"
                     android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 756-6403"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_2"
                     app:layout_constraintTop_toBottomOf="@+id/jeremiahs"
                     tools:text="(508) 756-6403" />
@@ -172,9 +185,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="1059 Main St."
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon2"
-                    app:layout_constraintTop_toBottomOf="@+id/jeremiahsPhone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/jeremiahsPhone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -182,8 +195,11 @@
                 android:id="@+id/francescard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/jeremiahscard">
+                app:layout_constraintTop_toBottomOf="@+id/jeremiahscard"
+                tools:layout_editor_absoluteX="10dp">
 
                 <TextView
                     android:id="@+id/frances"
@@ -193,6 +209,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Frances Perkins Home"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -215,9 +232,11 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 757-7506"
-                    android:clickable="true"
                     android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="(508) 757-7506"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_3"
                     app:layout_constraintTop_toBottomOf="@+id/frances"
                     tools:text="(508) 757-7506" />
@@ -240,9 +259,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="70 James St., Suite 139B"
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon3"
-                    app:layout_constraintTop_toBottomOf="@+id/francesPhone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/francesPhone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -250,8 +269,11 @@
                 android:id="@+id/interfaithcard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/francescard">
+                app:layout_constraintTop_toBottomOf="@+id/francescard"
+                tools:layout_editor_absoluteX="10dp">
 
                 <TextView
                     android:id="@+id/interfaith"
@@ -261,6 +283,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Interfaith Hospitality"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -283,8 +306,10 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 755-2212"
                     android:autoLink="phone"
+                    android:text="(508) 755-2212"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_4"
                     app:layout_constraintTop_toBottomOf="@+id/interfaith"
                     tools:text="(508) 755-2212" />
@@ -307,9 +332,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="91 June St."
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon4"
-                    app:layout_constraintTop_toBottomOf="@+id/interfaithphone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/interfaithphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -317,7 +342,12 @@
                 android:id="@+id/ywcacard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/interfaithcard">
 
                 <TextView
@@ -328,6 +358,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Y.W.C.A Of Central MA"
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -350,8 +381,10 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(508) 791-3181"
                     android:autoLink="phone"
+                    android:text="(508) 791-3181"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_5"
                     app:layout_constraintTop_toBottomOf="@+id/ywca"
                     tools:text="(508) 791-3181" />
@@ -374,9 +407,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="91 June St."
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon5"
-                    app:layout_constraintTop_toBottomOf="@+id/ywcaphone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/ywcaphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -384,8 +417,11 @@
                 android:id="@+id/veteranscard"
                 android:layout_width="match_parent"
                 android:layout_height="117dp"
+                android:layout_margin="15dp"
+                android:background="#A8FFC107"
                 android:orientation="vertical"
-                app:layout_constraintTop_toBottomOf="@+id/ywcacard">
+                app:layout_constraintTop_toBottomOf="@+id/ywcacard"
+                tools:layout_editor_absoluteX="10dp">
 
                 <TextView
                     android:id="@+id/veterans"
@@ -395,6 +431,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:text="Veterans, Inc."
+                    android:textColor="#000000"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -417,8 +454,10 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="(800) 482-2565"
                     android:autoLink="phone"
+                    android:text="(800) 482-2565"
+                    android:textColor="#000000"
+                    android:textColorLink="#353535"
                     app:layout_constraintStart_toEndOf="@+id/phone_icon_6"
                     app:layout_constraintTop_toBottomOf="@+id/veterans"
                     tools:text="(800) 482-2565" />
@@ -441,9 +480,9 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:text="69 Grove St."
+                    android:textColor="#000000"
                     app:layout_constraintStart_toEndOf="@+id/homeIcon6"
-                    app:layout_constraintTop_toBottomOf="@+id/veteransphone"
-                    tools:layout_editor_absoluteX="16dp" />
+                    app:layout_constraintTop_toBottomOf="@+id/veteransphone" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

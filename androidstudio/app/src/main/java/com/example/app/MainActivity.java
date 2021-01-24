@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle("Helping Hand");
+        getSupportActionBar().setTitle("");
 
         User user1 = new User("chris shadis", "7742001286", "volunteer", "ctshadis@gmail.com", "passw0rd");
       //  String result = user1.storeToFile(this);

@@ -22,7 +22,7 @@ public class FoodBanks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.foodbanks_page);
         //TODO Change this title
-        getSupportActionBar().setTitle("Helping Hand: Food Banks (Change Me)");
+        getSupportActionBar().setTitle("");
         //addShelters();
 
 

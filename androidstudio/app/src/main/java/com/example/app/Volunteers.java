@@ -12,6 +12,7 @@ public class Volunteers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setTitle("");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.volunteers);
 

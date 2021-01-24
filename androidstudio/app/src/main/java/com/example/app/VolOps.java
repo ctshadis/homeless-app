@@ -10,8 +10,10 @@ import android.widget.Button;
 public class VolOps extends AppCompatActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setTitle("");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vol_ops);
 

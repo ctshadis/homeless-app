@@ -44,4 +44,13 @@
     <string name="looking_for_people_to_come_help_us_make_and_distribute_food">Looking for people to come help us make and distribute food</string>
     <string name="search_for_nearby_volunteering_opportunities">Search for nearby volunteering opportunities</string>
     <string name="sorry_there_are_no_more_volunteering_opportunities_currently_available_try_again_later">Sorry, there are no more volunteering opportunities currently available. Try again later.</string>
+    <string name="we_re_here_to_help">We are here to help</string>
+    <string name="we_know_times_are_tough_but_things_will_get_better_let_your_community_help_you_back_on_your_feet">We know times are tough, but things will get better. Let your community help you back on your feet.</string>
+    <string name="shelters">Shelters</string>
+    <string name="food_banks">Food Banks</string>
+    <string name="hotlines">Hotlines</string>
+    <string name="i_want_to_help">I Want To Help</string>
+    <string name="log_in">Log In</string>
+    <string name="i_need_help">I Need Help</string>
+
 </resources>
