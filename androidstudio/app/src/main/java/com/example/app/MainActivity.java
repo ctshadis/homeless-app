@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         AnimationDrawable animationDrawable = (AnimationDrawable)
                 layout.getBackground();
        animationDrawable.setEnterFadeDuration(1500);
-        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.setExitFadeDuration(2000);
         animationDrawable.start();
 
 
