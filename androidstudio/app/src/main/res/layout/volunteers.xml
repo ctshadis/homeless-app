@@ -32,7 +32,6 @@
         android:background="@drawable/rounded_cyan_border"
         android:text="@string/volunteer_opportunities"
         android:textColor="#000000"
-        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -45,7 +44,6 @@
         android:background="@drawable/rounded_cyan_border"
         android:text="@string/donate"
         android:textColor="#000000"
-        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -61,7 +59,6 @@
         android:background="@drawable/rounded_cyan_border"
         android:text="@string/community_outreach"
         android:textColor="#000000"
-        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
