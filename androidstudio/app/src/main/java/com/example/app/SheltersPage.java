@@ -32,14 +32,6 @@ public class SheltersPage extends AppCompatActivity {
 
     }
 
-    public void make_call(View v)
-    {
-        TextView tv= (TextView) findViewById(v.getId());
-
-        //alter text of textview widget
-        String txt = v.toString();
-        tv.setText("heya fool");
-    }
 
     /*protected void addShelters(){
 
