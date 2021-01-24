@@ -7,6 +7,20 @@
     android:background="@drawable/gradient">
 
     <TextView
+        android:id="@+id/nearYou"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/charities_near_you"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView4"
+        app:layout_constraintTop_toBottomOf="@+id/donateText"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
         android:id="@+id/donateText"
         android:layout_width="285dp"
         android:layout_height="67dp"
@@ -15,12 +29,13 @@
         android:text="@string/make_a_donation"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#050505"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="411dp"
         android:layout_height="529dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,16 +48,14 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/catholicCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:background="@drawable/rounded_cyan_border"
-                app:layout_constraintTop_toTopOf="parent">
-                android:id="@+id/catholicCard"
-                android:layout_width="match_parent"
-                android:layout_height="117dp"
                 android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent">
+
 
                 <TextView
                     android:id="@+id/elBuen"
@@ -293,16 +306,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/nearYou"
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/charities_near_you"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#000000"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="114dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

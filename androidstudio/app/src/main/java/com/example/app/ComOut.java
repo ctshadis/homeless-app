@@ -11,7 +11,7 @@ public class ComOut extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.com_ops);
 
