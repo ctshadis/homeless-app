@@ -11,7 +11,7 @@
     <string name="textview">TextView</string>
     <string name="search">Search</string>
     <string name="search_for_charities">Search for charities</string>
-    <string name="charities_near_you">Charities Near You</string>
+    <string name="charities_near_you">Charities in Worcester</string>
     <string name="catholic_charities">Catholic Charities</string>
     <string name="phone">Phone:</string>
     <string name="_508_798_0191">(508) 798-0191</string>
@@ -52,5 +52,7 @@
     <string name="i_want_to_help">I Want To Help</string>
     <string name="log_in">Log In</string>
     <string name="i_need_help">I Need Help</string>
+    <string name="food_banks_in_worcester">Food Banks in Worcester</string>
+    <string name="st_oscar_romero_food_pantry">St. Oscar Romero Food Pantry</string>
 
 </resources>

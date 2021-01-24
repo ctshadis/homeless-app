@@ -13,9 +13,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="208dp"
-        android:layout_height="146dp"
+        android:layout_width="216dp"
+        android:layout_height="151dp"
         android:layout_marginTop="76dp"
+        android:contentDescription="@string/todo"
         android:fadingEdge="horizontal|vertical"
         android:fadingEdgeLength="35dp"
         android:rotation="0"
@@ -25,8 +26,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagelogo"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/imagelogo" />
 
     <Button
         android:id="@+id/button1"
@@ -34,14 +34,19 @@
         android:layout_height="67dp"
         android:layout_marginTop="350dp"
         android:layout_marginBottom="27dp"
-        android:background="@drawable/gradient_accent"
+        android:background="@drawable/rounded_cyan_border"
+        android:fontFamily="serif"
         android:text="@string/i_need_help"
         android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:theme="@style/Button.Black"
+        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/i_need_help" />
 
     <Button
         android:id="@+id/button2"
@@ -49,10 +54,14 @@
         android:layout_height="67dp"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="217dp"
-        android:background="@drawable/gradient_accent"
+        android:background="@drawable/rounded_cyan_border"
+        android:fontFamily="serif"
         android:text="@string/i_want_to_help"
         android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:theme="@style/Button.Black"
+        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,10 +73,11 @@
         android:layout_height="42dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="36dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/rounded_cyan_border"
         android:text="@string/log_in"
         android:textColor="#000000"
         android:theme="@style/Button.Black"
+        app:backgroundTint="@drawable/rounded_cyan_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

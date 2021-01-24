@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Donate extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.donate);
     }

@@ -33,7 +33,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_page);
         //TODO Change this title
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().hide();
 
         TextView registerText = (TextView)findViewById(R.id.register_text);
         ImageView button=(ImageView)findViewById(R.id.login_button);

@@ -19,7 +19,7 @@ public class Underpriveleged extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.underpriveleged);
         //TODO Change this title
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().hide();
         //addShelters();
 
         Button button=(Button)findViewById(R.id.shelterButton);

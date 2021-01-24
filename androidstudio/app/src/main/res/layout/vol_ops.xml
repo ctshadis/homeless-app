@@ -26,7 +26,6 @@
         android:layout_width="413dp"
         android:layout_height="557dp"
         android:layout_marginTop="67dp"
-        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="182dp"
                 android:layout_margin="10dp"
-                android:background="#A8FFC107"
+                android:background="@drawable/rounded_cyan_border"
                 android:padding="10dp">
 
                 <ImageView
